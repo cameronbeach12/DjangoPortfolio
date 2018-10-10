@@ -10,27 +10,31 @@
     <title>{% block title %}Hello, world!{% endblock %}</title>
   </head>
   <style>
-    .impact {
-      font-family = 'Impact';
-      font-size = 22px;
+    .homeLabel { 
+      margin-left: 40px;
+      margin-top: 25px; 
+    }
+    .fontImpact {
+      font-family: impact;
+      font-size: 22px;
     }
   </style>
   <body>
-  <div class="impact">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{% url 'home' %}">CBeach</a>
+<div class="fontImpact">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="{% url 'home' %}">CBeach</a>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'home' %}">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'about' %}">About</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </div>
 
     {% block contents %}
